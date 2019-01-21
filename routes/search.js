@@ -19,10 +19,74 @@ var result = [{
 		ch: 'LS 系列, 四 2输入 与非门, DSO14',
 		en: 'LS SERIES, QUAD 2-INPUT NAND GATE, DSO14'
 	},
-	detail: {
-		fun: 4,
-		num: 14
+	detail: [{
+		title: '功能数量',
+		val: '4'
+	},{
+		title: '端子数量',
+		val: '14'
+	},{
+		title: '最大工作温度',
+		val: '70 Cel'
+	},{
+		title: '最小工作温度',
+		val: '0.0 Cel'
+	},{
+		title: '最大供电/工作电压',
+		val: '5.25 V'
+	},{
+		title: '最小供电/工作电压',
+		val: '4.75 V'
+	},{
+		title: '额定供电电压',
+		val: '5 V'
+	},{
+		title: '加工封装描述',
+		val: 'DFP-14'
+	},{
+		title: '状态',
+		val: 'DISCONTINUED'
+	},{
+		title: '工艺',
+		val: 'TTl'
+	},{
+		title: '包装形状',
+		val: 'RECTANGULAR'
+	},{
+		title: '包装尺寸',
+		val: 'SMALL OUTLINE'
+	},{
+		title: '表面贴装',
+		val: 'Yes'
+	},{
+		title: '端子形式',
+		val: 'FLAT'
+	},{
+		title: '端子涂层',
+		val: 'TIN LEAD'
+	},{
+		title: '端子位置',
+		val: 'DUAL'
+	},{
+		title: '包装材料',
+		val: 'UNSPECIFIED'
+	},{
+		title: '温度等级',
+		val: 'COMMERCIAL'
+	},{
+		title: '系列',
+		val: 'LS'
+	},{
+		title: '逻辑IC类型',
+		val: 'NAND'
+	},{
+		title: '输入数',
+		val: '2'
+	},{
+		title: '传播延迟TPD',
+		val: '10 ns'
 	},
+	],
 	pdf: ''
 },{
 	id: '2',
