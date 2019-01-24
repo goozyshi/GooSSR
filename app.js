@@ -29,7 +29,6 @@ app.use('/', indexRouter);  //路由'/'路径的请求
 app.use('/users', usersRouter);  //路由'/users'路径的请求 
 app.use('/search', searchRouter);  //路由'/search'路径的请求 
 app.use('/search/:id', searchRouter);  //路由'/search/*'路径的请求 
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

@@ -371,11 +371,11 @@ var ne555 = [{
 
 /* 查询 */
 router.get('/:id', function(req, res, next) {
-	if(req.params.id === 'ne555'){
-		res.send(JSON.stringify(ne555));
-	}else{
-		res.send(JSON.stringify(result));
-	}
+	let reg_ne = /^ne*/;
+	let reg_74 = /^74*/;
+	reg_ne.test(req.params.id) && res.send(JSON.stringify(ne555));
+	reg_74.test(req.params.id) && res.send(JSON.stringify(result));
+	!(reg_ne.test(req.params.id) || reg_74.test(req.params.id)) && res.send('');
 });
 
 /* 新建 */
