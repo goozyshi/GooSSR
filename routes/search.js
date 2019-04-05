@@ -1,5 +1,5 @@
 var express = require('express');
-var router = express.Router();
+var search = express.Router();
 
 const detail_ne555 = [
 	{
@@ -136,7 +136,7 @@ const detail_74ls = [
 		val: '10 ns'
 	}]
 
-var LS74 = [{
+var result = [{
 	id: '0',
 	name: '74LS00',
 	company: 'Fairchild Semiconductor',
@@ -145,7 +145,7 @@ var LS74 = [{
 		en: 'MCF52233 LOW COST EVALUA'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '1',
 	name: '74LS00A',
@@ -155,7 +155,7 @@ var LS74 = [{
 		en: 'LS SERIES, QUAD 2-INPUT NAND GATE, PDIP14'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '2',
 	name: '74LS00DC',
@@ -165,7 +165,7 @@ var LS74 = [{
 		en: 'LS SERIES, QUAD 2-INPUT NAND GATE, CDIP14'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '3',
 	name: '74LS00DCQM',
@@ -175,7 +175,7 @@ var LS74 = [{
 		en: 'LS SERIES, QUAD 2-INPUT NAND GATE, PDIP14'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '4',
 	name: '74LS00DCQR',
@@ -185,7 +185,7 @@ var LS74 = [{
 		en: 'NAND Gate, TTL, CDIP14'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '5',
 	name: '74LS00DCQR',
@@ -195,7 +195,7 @@ var LS74 = [{
 		en: 'NAND Gate'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '6',
 	name: '74LS00FC',
@@ -205,7 +205,7 @@ var LS74 = [{
 		en: 'LS SERIES, QUAD 2-INPUT NAND GATE, DSO14'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '7',
 	name: '74LS00FC',
@@ -215,7 +215,7 @@ var LS74 = [{
 		en: 'LS SERIES, QUAD 2-INPUT NAND GATE, DSO14'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '8',
 	name: '74LS00FC',
@@ -225,7 +225,7 @@ var LS74 = [{
 		en: 'LS SERIES, QUAD 2-INPUT NAND GATE, DSO14'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '9',
 	name: '74LS00N',
@@ -235,7 +235,7 @@ var LS74 = [{
 		en: 'IC,LOGIC GATE,QUAD 2-INPUT NAND,LS-TTL,DIP,14PIN,PLASTIC'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '10',
 	name: '74LS00N',
@@ -245,7 +245,7 @@ var LS74 = [{
 		en: 'LS SERIES, QUAD 2-INPUT NAND GATE, PDIP14'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '11',
 	name: '74LS00PC',
@@ -255,7 +255,7 @@ var LS74 = [{
 		en: 'NAND Gate, LS Series, 4-Func, 2-Input, TTL, PDIP14'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 },{
 	id: '12',
 	name: '74LS00PCQR',
@@ -265,7 +265,7 @@ var LS74 = [{
 		en: 'NAND Gate, TTL, PDIP14'
 	},
 	detail: [...detail_74ls],
-	pdf: '/pdf/74LS00_DataSheet.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/74LS00_DataSheet.pdf'
 }];
 
 var ne555 = [{
@@ -277,7 +277,7 @@ var ne555 = [{
 		en: 'high-performance operational amplifiers'
 	},
 	detail: [...detail_ne555],
-	pdf: '/pdf/NE555.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/NE555.pdf'
 },{
 	id: '1',
 	name: 'NE555',
@@ -287,7 +287,7 @@ var ne555 = [{
 		en: 'Single Timer'
 	},
 	detail: [...detail_ne555],
-	pdf: '/pdf/NE555.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/NE555.pdf'
 },{
 	id: '2',
 	name: 'NE5550779A-A',
@@ -297,7 +297,7 @@ var ne555 = [{
 		en: 'RF POWER, FET'
 	},
 	detail: [...detail_ne555],
-	pdf: '/pdf/NE555.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/NE555.pdf'
 },{
 	id: '3',
 	name: 'NE555D',
@@ -307,7 +307,7 @@ var ne555 = [{
 		en: 'PULSE; RECTANGULAR, TIMER, PDSO8'
 	},
 	detail: [...detail_ne555],
-	pdf: '/pdf/NE555.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/NE555.pdf'
 },{
 	id: '4',
 	name: 'NE555D',
@@ -317,7 +317,7 @@ var ne555 = [{
 		en: 'Single Precision Timer 8-SOIC 0 to 70'
 	},
 	detail: [...detail_ne555],
-	pdf: '/pdf/NE555.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/NE555.pdf'
 },{
 	id: '5',
 	name: 'NE555D',
@@ -327,7 +327,7 @@ var ne555 = [{
 		en: 'PULSE; RECTANGULAR, TIMER, PDSO8'
 	},
 	detail: [...detail_ne555],
-	pdf: '/pdf/NE555.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/NE555.pdf'
 },{
 	id: '6',
 	name: 'NE555D',
@@ -337,7 +337,7 @@ var ne555 = [{
 		en: 'SQUARE, TIMER, PDSO8'
 	},
 	detail: [...detail_ne555],
-	pdf: '/pdf/NE555.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/NE555.pdf'
 },{
 	id: '7',
 	name: 'NE555D-T',
@@ -347,7 +347,7 @@ var ne555 = [{
 		en: 'SQUARE, TIMER, PDSO8'
 	},
 	detail: [...detail_ne555],
-	pdf: '/pdf/NE555.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/NE555.pdf'
 },{
 	id: '8',
 	name: 'NE555D/DT',
@@ -357,7 +357,7 @@ var ne555 = [{
 		en: 'TIMER'
 	},
 	detail: [...detail_ne555],
-	pdf: '/pdf/NE555.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/NE555.pdf'
 },{
 	id: '9',
 	name: 'NE555DG4',
@@ -367,42 +367,42 @@ var ne555 = [{
 		en: 'Single Precision Timer 8-SOIC 0 to 70'
 	},
 	detail: [...detail_ne555],
-	pdf: '/pdf/NE555.pdf'
+	pdf: 'http://129.204.128.185:3000/pdf/NE555.pdf'
 }]
 
 /* 查询 */
-router.get('/:id', function(req, res, next) {
-	let reg_ne = /(^ne|^55)*/;
-	let reg_74 = /^74*/;
+search.get('/:id', function(req, res, next) {
+	let reg_ne = /^ne*/g;
+	let reg_74 = /^74*/g;
+	reg_74.test(req.params.id) && res.send(JSON.stringify(result));
 	reg_ne.test(req.params.id) && res.send(JSON.stringify(ne555));
-	reg_74.test(req.params.id) && res.send(JSON.stringify(LS74));
 	!(reg_ne.test(req.params.id) || reg_74.test(req.params.id)) && res.send('');
 });
 
 /* 新建 */
-router.post('/', function(req, res, next) {
-	LS74 = LS74.concat(req.body);
-  res.send(JSON.stringify(LS74));
+search.post('/', function(req, res, next) {
+	result = result.concat(req.body);
+  res.send(JSON.stringify(result));
 });
 
 /* 更新 */
-router.put('/:id', function(req, res, next) {
-	for (var i = 0; i < LS74.length; i++) {
-		if(LS74[i].id === parseInt(req.params.id)) {
-			LS74[i] = req.body
+search.put('/:id', function(req, res, next) {
+	for (var i = 0; i < result.length; i++) {
+		if(result[i].id === parseInt(req.params.id)) {
+			result[i] = req.body
 		}
 	}
-  res.send(JSON.stringify(LS74));
+  res.send(JSON.stringify(result));
 });
 
 /* 删除 */
-router.delete('/:id', function(req, res, next) {
-  for (var i = 0; i < LS74.length; i++) {
-  	if(LS74[i].id === parseInt(req.params.id)) {
-			LS74.splice(i, 1);
+search.delete('/:id', function(req, res, next) {
+  for (var i = 0; i < result.length; i++) {
+  	if(result[i].id === parseInt(req.params.id)) {
+			result.splice(i, 1);
 		}
   }
   res.send("success");
 });
 
-module.exports = router;
+module.exports = search;
