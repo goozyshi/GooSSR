@@ -9,8 +9,10 @@ var logger = require('morgan');
 
 // 引入接口文件
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var projectRouter = require('./routes/project');
 var searchRouter = require('./routes/search');
+var loginRouter = require('./routes/login');
+
 
 var app = express();
 
@@ -26,7 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // 设置路由
 app.use('/', indexRouter);  //路由'/'路径的请求
-app.use('/users', usersRouter);  //路由'/users'路径的请求 
+app.use('/project', projectRouter);  //路由'/project'路径的请求 
+app.use('/login', loginRouter);  //路由'/login'路径的请求 
 app.use('/search', searchRouter);  //路由'/search'路径的请求 
 app.use('/search/:id', searchRouter);  //路由'/search/*'路径的请求 
 // catch 404 and forward to error handler

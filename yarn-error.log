@@ -1,0 +1,48 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\goozyshi\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\goozyshi\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;% ANDROID_HOME%\platform-tool;% ANDROID_HOME%\tools";%JAVA_HOME%\bi;%JAVA_HOME%\jre\bin";C:\Program Files\nodejs;C:\Users\goozyshi\AppData\Local\Microsoft\WindowsApps;C:\Users\goozyshi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\goozyshi\AppData\Local\GitHubDesktop\bin;C:\Users\goozyshi\AppData\Roaming\npm
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  11.12.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: D:\GooSSR\package.json: Unexpected token } in JSON at position 317
+      at JSON.parse (<anonymous>)
+      at C:\Users\goozyshi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\goozyshi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:304:30)
+      at C:\Users\goozyshi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "goossr",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www"
+    },
+    "dependencies": {
+      "cookie-parser": "~1.4.3",
+      "debug": "~2.6.9",
+      "ejs": "~2.5.7",
+      "express": "~4.16.0",
+      "http-errors": "~1.6.2",
+      "morgan": "~1.9.0",
+      "mysql": "latest"
+    }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
